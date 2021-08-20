@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/imgbExit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/custom_button_exit"
+            android:src="@drawable/round_close_24" />
+
+        <com.google.android.exoplayer2.ui.PlayerView
+
+            android:id="@+id/pv_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:controller_layout_id="@layout/custom_controller"
+            app:fastforward_increment="10000"
+            app:hide_on_touch="true"
+            app:player_layout_id="@layout/exo_player_view"
+            app:resize_mode="fit"
+            app:rewind_increment="10000"
+            app:show_timeout="2000"
+            app:use_controller="true" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvLikeWatchVideo"-->
+        <!--            android:gravity="center"-->
+        <!--            android:textSize="12dp"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_below="@+id/imgLike"-->
+        <!--            android:layout_width="50dp"-->
+        <!--            android:layout_height="20dp"/>-->
+
+
+        <TextView
+            android:id="@+id/tvtitleVideoPlaying"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/pv_video"
+            android:maxLines="2"
+            android:paddingVertical="10dp"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/imgLike"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:src="@drawable/outline_favorite_24" />
+        <TextView
+            android:id="@+id/tvLiked"
+            android:layout_gravity="right"
+            android:layout_width="50dp"
+            android:layout_height="20dp"/>
+
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+    <TextView
+        android:layout_marginVertical="10dp"
+        android:id="@+id/tvChuadangnhap"
+        android:text="@string/chuadangnhap"
+        android:gravity="center"
+        android:layout_marginHorizontal="40dp"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnChondangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/custom_button_login"
+        android:text="@string/dangnhap"
+        android:textSize="20dp" />
+
+</LinearLayout>
+</layout>
